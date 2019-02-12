@@ -1,6 +1,7 @@
 # Bash
 
-../gradlew clean debug
+#../gradlew clean debug
+../gradlew clean installDebug
 if [ $? -eq 0 ]
  then
   adb uninstall org.ros.android.android_sensors_driver
@@ -9,3 +10,4 @@ if [ $? -eq 0 ]
   adb logcat -c
   adb logcat
 fi
+
